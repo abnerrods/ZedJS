@@ -57,23 +57,6 @@ export async function summonerByNameExample () {
 }
 ```
 
-Teamfight Tatics:
-
-```js
-import { TftApi, Constants } from '@jlenon7/zedjs'
-
-const api = new TftApi()
-
-export async function matchListTft () {
-  const {
-    response: {
-      puuid
-    }
-  } = api.Summoner.getByName('iLenon7', Constants.Regions.BRAZIL)
-  return api.Match.list(puuid, Constants.TftRegions.TftRegions.AMERICAS)
-}
-```
-
 ---
 
 ## 🤔 How to contribute
