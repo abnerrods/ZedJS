@@ -1,1 +1,1 @@
-export * from './summoner'
+export * from './summoner';
